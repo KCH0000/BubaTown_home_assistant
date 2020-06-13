@@ -1,0 +1,5 @@
+- platform: workday
+  name: workday
+  country: RU
+  workdays: [mon, tue, wed, thu, fri]
+  excludes: [sat, sun, holiday]
