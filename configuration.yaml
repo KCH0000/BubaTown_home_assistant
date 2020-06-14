@@ -11,7 +11,7 @@ homeassistant:
   customize: !include customize.yaml
 # Configure a default setup of Home Assistant (frontend, api, etc)
 default_config:
-python_script:
+#python_script:
 # Uncomment this if you are using SSL/TLS, running in Docker container, etc.
 #############################################
 #           HTTP config                     #
@@ -19,16 +19,11 @@ python_script:
 http:
     base_url: !secret base_url
     use_x_forwarded_for: true
-#    ssl_certificate: /config/ssl/fullchain.pem
-#    ssl_key: /config/ssl/privkey.pem
     trusted_proxies:
       - 192.168.112.4
       - 127.0.0.1
       - 192.168.112.1
       - 172.24.0.4
-# Text to speech
-#tts:
-#  - platform: google_translate
 
 # Includes files setting GLOBAL
 group: !include_dir_merge_named group/
@@ -58,8 +53,8 @@ recorder:
   db_url: !secret db_url
 
 #############################################
-#vera:
-#  vera_controller_url: !secret vera_controller_url
+vera:
+  vera_controller_url: !secret vera_controller_url
 #############################################
 
 
@@ -93,6 +88,6 @@ recorder:
 
 
 #############################################
-transmission:
-  host: !secret transmission_host
+#transmission:
+#  host: !secret transmission_host
 
