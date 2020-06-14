@@ -8,7 +8,7 @@ homeassistant:
   name: BubaTown
   whitelist_external_dirs:
     - /tmp
-  customize: !include customize.yaml
+  customize: !include_dir_merge_named customize
 # Configure a default setup of Home Assistant (frontend, api, etc)
 default_config:
 #python_script:

@@ -1,0 +1,19 @@
+motion_sensors:
+  name: 'Датчики движения'
+  entities:
+    - switch.summer_kitchen_motion_sensor
+    - switch.porch_motion_sensor
+    - switch.hall_motion_sensor
+
+smoke_sensors:
+  name: 'Датчики дыма'
+  entities:
+    - switch.loft_smoke_sensor
+    - switch.hall_smoke_sensor
+    - switch.kitchen_smoke_sensor
+    - switch.garage_smoke_sensor
+
+flood_sensors:
+  name: 'Датчики протечки'
+  entities:
+    - switch.kitchen_flood_sensor
