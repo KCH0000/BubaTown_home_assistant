@@ -1,0 +1,83 @@
+switch.cabinet_heater:
+  friendly_name: "Обогреватель в кабинете"
+  hidden: false
+  homebridge_hidden: false
+  entity_picture:
+  icon: mdi:radiator
+
+switch.bedroom_heater:
+  friendly_name: "Обогреватель в спальне"
+  hidden: false
+  homebridge_hidden: false
+  entity_picture:
+  icon: mdi:radiator
+
+switch.wall_plug_2:
+  friendly_name: "Переносная розетка 2"
+  hidden: false
+  homebridge_hidden: false
+  entity_picture:
+  icon: mdi:power-socket-eu
+
+switch.wall_plug_3:
+  friendly_name: "Переносная розетка 3"
+  hidden: false
+  homebridge_hidden: false
+  entity_picture:
+  icon: mdi:power-socket-eu
+
+switch.toilet_wall_plug:
+  friendly_name: "Розетка в туалете"
+  hidden: false
+  homebridge_hidden: false
+  entity_picture:
+  icon: mdi:power-socket-eu
+
+switch.loft_wall_plug:
+  friendly_name: "Розетка на чердаке"
+  hidden: false
+  homebridge_hidden: false
+  entity_picture:
+  icon: mdi:power-socket-eu
+
+switch.balcony_light:
+  friendly_name: "Свет на балконе"
+  hidden: false
+  homebridge_hidden: true
+  entity_picture:
+  icon: mdi:lightbulb
+
+switch.summer_terrace_light:
+  friendly_name: "Свет на террасе"
+  hidden: false
+  homebridge_hidden: true
+  entity_picture:
+  icon: mdi:lightbulb
+
+switch.yard_light_at_balcony:
+  friendly_name: "Свет во дворе"
+  hidden: false
+  homebridge_hidden: false
+  entity_picture:
+  icon: mdi:lightbulb
+
+switch.main_boiler:
+  friendly_name: "Основное отопление"
+  hidden: false
+  homebridge_hidden: true
+  entity_picture:
+  icon: mdi:water-boiler
+
+switch.yard_gate:
+  friendly_name: "Уличные ворота"
+  hidden: false
+  homebridge_hidden: false
+  entity_picture:
+  icon: mdi:gate
+
+switch.yard_gate_foot:
+  friendly_name: "Уличные ворота(пешеход)"
+  hidden: false
+  homebridge_hidden: false
+  entity_picture:
+  icon: mdi:gate

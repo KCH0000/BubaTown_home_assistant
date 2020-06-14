@@ -1,0 +1,62 @@
+switch.hall_motion_sensor:
+  friendly_name: "Датчик движения в холле"
+  hidden: false
+  homebridge_hidden: false
+  entity_picture:
+  icon: mdi:motion-sensor
+
+switch.summer_kitchen_motion_sensor:
+  friendly_name: "Датчик движения в холле"
+  hidden: false
+  homebridge_hidden: false
+  entity_picture:
+  icon: mdi:motion-sensor
+
+switch.porch_motion_sensor:
+  friendly_name: "Датчик движения на веранде"
+  hidden: false
+  homebridge_hidden: false
+  entity_picture:
+  icon: mdi:motion-sensor
+
+switch.loft_motion_sensor:
+  friendly_name: "Датчик движения на чердаке"
+  hidden: false
+  homebridge_hidden: false
+  entity_picture:
+  icon: mdi:motion-sensor
+
+switch.loft_smoke_sensor:
+  friendly_name: "Датчик дыма на чердаке"
+  hidden: false
+  homebridge_hidden: false
+  entity_picture:
+  icon: mdi:smoke-detector
+
+switch.hall_smoke_sensor:
+  friendly_name: "Датчик дыма в Холле"
+  hidden: false
+  homebridge_hidden: false
+  entity_picture:
+  icon: mdi:smoke-detector
+
+switch.kitchen_smoke_sensor:
+  friendly_name: "Датчик дыма на кухне"
+  hidden: false
+  homebridge_hidden: false
+  entity_picture:
+  icon: mdi:smoke-detector
+
+switch.garage_smoke_sensor:
+  friendly_name: "Датчик дыма в гараже"
+  hidden: false
+  homebridge_hidden: false
+  entity_picture:
+  icon: mdi:smoke-detector
+
+switch.kitchen_flood_sensor:
+  friendly_name: "Датчик протечки на кухне"
+  hidden: false
+  homebridge_hidden: false
+  entity_picture:
+  icon: mdi:waves
