@@ -17,3 +17,16 @@ flood_sensors:
   name: 'Датчики протечки'
   entities:
     - switch.kitchen_flood_sensor
+
+battery_level_sensors:
+  name: 'Датчики батареек'
+  entities:
+    - sensor.hall_motion_sensor_battery_level
+    - sensor.summer_kitchen_motion_sensor_battery_level
+    - sensor.porch_motion_sensor_battery_level
+    - sensor.loft_motion_sensor_battery_level
+    - sensor.loft_smoke_sensor_battery_level
+    - sensor.hall_smoke_sensor_battery_level
+    - sensor.kitchen_smoke_sensor_battery_level
+    - sensor.garage_smoke_sensor_battery_level
+    - sensor.kitchen_flood_sensor_battery_level
