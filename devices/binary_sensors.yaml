@@ -3,3 +3,10 @@
   country: RU
   workdays: [mon, tue, wed, thu, fri]
   excludes: [sat, sun, holiday]
+
+- platform: template
+  sensors:
+    main_boiler_is_run:
+      friendly_name: "Котлы"
+      value_template: >-
+        {{ is_state('switch.main_boiler_test', 'on') }}

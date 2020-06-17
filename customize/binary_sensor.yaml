@@ -1,62 +1,62 @@
-switch.hall_motion_sensor:
+binary_sensor.hall_motion_sensor:
   friendly_name: "Датчик движения в холле"
   hidden: false
   homebridge_hidden: false
   entity_picture:
-  icon: mdi:motion-sensor
+  device_class: motion
 
-switch.summer_kitchen_motion_sensor:
+binary_sensor.summer_kitchen_motion_sensor:
   friendly_name: "Датчик движения летняя кухня"
   hidden: false
   homebridge_hidden: false
   entity_picture:
-  icon: mdi:motion-sensor
+  device_class: motion
 
-switch.porch_motion_sensor:
+binary_sensor.porch_motion_sensor:
   friendly_name: "Датчик движения на веранде"
   hidden: false
   homebridge_hidden: false
   entity_picture:
-  icon: mdi:motion-sensor
+  device_class: motion
 
-switch.loft_motion_sensor:
+binary_sensor.loft_motion_sensor:
   friendly_name: "Датчик движения на чердаке"
   hidden: false
   homebridge_hidden: false
   entity_picture:
-  icon: mdi:motion-sensor
+  device_class: motion
 
-switch.loft_smoke_sensor:
+binary_sensor.loft_smoke_sensor:
   friendly_name: "Датчик дыма на чердаке"
   hidden: false
   homebridge_hidden: false
   entity_picture:
-  icon: mdi:smoke-detector
+  device_class: smoke
 
-switch.hall_smoke_sensor:
+binary_sensor.hall_smoke_sensor:
   friendly_name: "Датчик дыма в Холле"
   hidden: false
   homebridge_hidden: false
   entity_picture:
-  icon: mdi:smoke-detector
+  device_class: smoke
 
-switch.kitchen_smoke_sensor:
+binary_sensor.kitchen_smoke_sensor:
   friendly_name: "Датчик дыма на кухне"
   hidden: false
   homebridge_hidden: false
   entity_picture:
-  icon: mdi:smoke-detector
+  device_class: smoke
 
-switch.garage_smoke_sensor:
+binary_sensor.garage_smoke_sensor:
   friendly_name: "Датчик дыма в гараже"
   hidden: false
   homebridge_hidden: false
   entity_picture:
-  icon: mdi:smoke-detector
+  device_class: smoke
 
-switch.kitchen_flood_sensor:
+binary_sensor.kitchen_flood_sensor:
   friendly_name: "Датчик протечки на кухне"
   hidden: false
   homebridge_hidden: false
   entity_picture:
-  icon: mdi:waves
+  device_class: moisture

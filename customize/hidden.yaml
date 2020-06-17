@@ -13,3 +13,8 @@ switch.appliance_module_1_36:
 switch.appliance_module_11:
   homebridge_hidden: true
   hidden: true
+
+switch.appliance_module_4_97_2:
+  homebridge_hidden: true
+  hidden: true
+
