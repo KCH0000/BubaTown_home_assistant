@@ -1,3 +1,16 @@
+- platform: systemmonitor
+  resources:
+    - type: disk_free
+      arg: /media
+    - type: memory_use_percent
+    - type: processor_use
+    - type: load_15m
+
+- platform: time_date
+  display_options:
+    - 'time'
+    - 'date'
+
 - platform: template
   sensors:
     hall_motion_sensor_battery_level:
@@ -42,3 +55,4 @@
       friendly_name: "Датчик протечки на кухне"
       device_class: battery
       value_template: "{{ state_attr('binary_sensor.kitchen_flood_sensor', 'battery_level') }}"
+
