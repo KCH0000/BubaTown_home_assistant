@@ -1,0 +1,55 @@
+sensor.hall_smoke_sensor_temperature:
+  friendly_name: "Датчик температуры в холле(дым)"
+  homebridge_hidden: false
+  device_class: temperature
+
+sensor.loft_smoke_sensor_temperature:
+  friendly_name: "Датчик температуры на чердаке(дым)"
+  homebridge_hidden: false
+  device_class: temperature
+
+sensor.kitchen_smoke_sensor_temperature:
+  friendly_name: "Датчик температуры на кухне(дым)"
+  homebridge_hidden: false
+  device_class: temperature
+
+sensor.garage_smoke_sensor_temperature:
+  friendly_name: "Датчик температуры в гараже(дым)"
+  homebridge_hidden: false
+  device_class: temperature
+
+sensor.kitchen_flood_sensor_temperature:
+  friendly_name: "Датчик температуры на кухне(протечка)"
+  homebridge_hidden: false
+  device_class: temperature
+
+sensor.hall_motion_sensor_temperature:
+  friendly_name: "Датчик температуры в холле(движение)"
+  homebridge_hidden: false
+  device_class: temperature
+
+sensor.porch_motion_sensor_temperature:
+  friendly_name: "Датчик температуры на веранде(движение)"
+  homebridge_hidden: false
+  device_class: temperature
+
+sensor.summer_kitchen_motion_sensor_temperature:
+  friendly_name: "Датчик температуры летней кухне(движение)"
+  homebridge_hidden: false
+  device_class: temperature
+
+
+sensor.hall_motion_sensor_lux:
+  friendly_name: "Датчик освещенности в холле"
+  homebridge_hidden: false
+  device_class: temperature
+
+sensor.porch_motion_sensor_lux:
+  friendly_name: "Датчик освещенности на веранде"
+  homebridge_hidden: false
+  device_class: temperature
+
+sensor.summer_kitchen_motion_sensor_lux:
+  friendly_name: "Датчик освещенности летней кухне"
+  homebridge_hidden: false
+  device_class: temperature
