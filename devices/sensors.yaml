@@ -1,12 +1,44 @@
-- platform: systemmonitor
-  resources:
-    - type: disk_free
-      arg: /media
-    - type: memory_use_percent
-    - type: processor_use
-    - type: load_15m
+- platform: template
+  sensors:
+    hall_motion_sensor_battery_level:
+      friendly_name: "Датчик движения в холле"
+      device_class: battery
+      unit_of_measurement: '%'
+      value_template: "{{ state_attr('binary_sensor.hall_motion_sensor', 'battery_level') }}"
 
-- platform: time_date
-  display_options:
-    - 'time'
-    - 'date'
+    summer_kitchen_motion_sensor_battery_level:
+      friendly_name: "Датчик движения летняя кухня"
+      device_class: battery
+      unit_of_measurement: '%'
+      value_template: "{{ state_attr('binary_sensor.summer_kitchen_motion_sensor', 'battery_level') }}"
+
+    porch_motion_sensor_battery_level:
+      friendly_name: "Датчик движения на веранде"
+      device_class: battery
+      value_template: "{{ state_attr('binary_sensor.porch_motion_sensor', 'battery_level') }}"
+
+
+    loft_smoke_sensor_battery_level:
+      friendly_name: "Датчик дыма на чердаке"
+      device_class: battery
+      value_template: "{{ state_attr('binary_sensor.loft_smoke_sensor', 'battery_level') }}"
+
+    hall_smoke_sensor_battery_level:
+      friendly_name: "Датчик дыма в Холле"
+      device_class: battery
+      value_template: "{{ state_attr('binary_sensor.hall_smoke_sensor', 'battery_level') }}"
+
+    kitchen_smoke_sensor_battery_level:
+      friendly_name: "Датчик дыма на кухне"
+      device_class: battery
+      value_template: "{{ state_attr('binary_sensor.kitchen_smoke_sensor', 'battery_level') }}"
+
+    garage_smoke_sensor_battery_level:
+      friendly_name: "Датчик дыма в гараже"
+      device_class: battery
+      value_template: "{{ state_attr('binary_sensor.garage_smoke_sensor', 'battery_level') }}"
+
+    kitchen_flood_sensor_battery_level:
+      friendly_name: "Датчик протечки на кухне"
+      device_class: battery
+      value_template: "{{ state_attr('binary_sensor.kitchen_flood_sensor', 'battery_level') }}"
