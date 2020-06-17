@@ -68,6 +68,13 @@ switch.main_boiler:
   entity_picture:
   icon: mdi:water-boiler
 
+switch.main_boiler_test:
+  friendly_name: "Проверка котла"
+  hidden: false
+  homebridge_hidden: true
+  entity_picture:
+  icon: mdi:water-boiler
+
 switch.yard_gate:
   friendly_name: "Уличные ворота"
   hidden: false

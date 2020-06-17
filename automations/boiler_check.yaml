@@ -1,0 +1,53 @@
+- alias: 'Boiler check'
+  trigger:
+    - platform: time
+      at: '19:00:00'
+  condition:
+    - condition: time
+      weekday:
+        - mon
+        - fri
+  action:
+    - service: switch.toggle
+      entity_id: switch.main_boiler
+    - delay: '00:00:03'
+    - service: switch.toggle
+      entity_id: switch.main_boiler
+    - service: notify.telegram
+      data_template:
+        title: "Проверка котлов"
+        message: "Запустилась проверка контактора"
+
+
+- alias: 'Boiler fail message ON'
+  trigger:
+    - platform: state
+      entity_id: switch.main_boiler
+      to: 'on'
+  action:
+    - delay: '00:00:05'
+    - condition: state
+      entity_id: binary_sensor.main_boiler_is_run
+      state: 'off'
+      for:
+        seconds: 3
+    - service: notify.telegram
+      data_template:
+        title: "**Ошибка котлов**"
+        message: "Была попытка ON, но включение не произошло"
+
+- alias: 'Boiler fail message OFF'
+  trigger:
+    - platform: state
+      entity_id: binary_sensor.main_boiler_is_run
+      to: 'off'
+  action:
+    - condition: state
+      entity_id: switch.main_boiler
+      state: 'on'
+      for:
+        seconds: 3
+    - service: notify.telegram
+      data_template:
+        title: "**Ошибка котлов**"
+        message: "Была попытка OFF, но выключение не произошло"
