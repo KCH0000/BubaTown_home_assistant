@@ -25,6 +25,7 @@
         - binary_sensor.kitchen_smoke_sensor
         - binary_sensor.garage_smoke_sensor
       to: 'on'
+      for: '00:00:01'
   action:
     - condition: template
       value_template: "{{ trigger.to_state.attributes['device_armed'] }}"
