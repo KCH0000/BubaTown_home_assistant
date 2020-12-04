@@ -48,3 +48,13 @@
       data_template:
         title: "**ОБНАРУЖЕНА ПРОТЕЧКА**"
         message: "{{ trigger.to_state.attributes['friendly_name'] | string }}"
+
+- id: alarm_then_booted
+  alias: 'alarm_then_HA_booted'
+  trigger:
+    - platform: homeassistant
+      event: start
+  action:
+    - service: notify.telegram
+      data_template:
+        message: "Home Assistant перезагрузился"
