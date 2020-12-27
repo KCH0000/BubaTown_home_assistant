@@ -6,8 +6,6 @@ homeassistant:
   unit_system: metric
   time_zone: !secret time_zone
   name: BubaTown
-  whitelist_external_dirs:
-    - /tmp
   customize: !include_dir_merge_named customize
 # Configure a default setup of Home Assistant (frontend, api, etc)
 default_config:
@@ -51,6 +49,7 @@ scene: !include_dir_merge_list scenes/
 #############################################
 config:
 recorder:
+  db_url: !secret db_url
   purge_keep_days: 30
 
 #############################################

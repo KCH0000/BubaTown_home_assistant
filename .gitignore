@@ -10,4 +10,5 @@
 /custom_components/
 /.storage/
 /.idea
+/.vscode
 /zones.yaml
