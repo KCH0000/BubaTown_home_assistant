@@ -30,6 +30,20 @@
       device_class: battery
       value_template: "{{ state_attr('binary_sensor.porch_motion_sensor', 'battery_level') }}"
 
+    loft_motion_sensor_battery_level:
+      friendly_name: "Датчик движения на чердаке"
+      device_class: battery
+      value_template: "{{ state_attr('binary_sensor.loft_motion_sensor', 'battery_level') }}"
+    
+    garage_motion_sensor_battery_level:
+      friendly_name: "Датчик движения в гараже"
+      device_class: battery
+      value_template: "{{ state_attr('binary_sensor.garage_motion_sensor', 'battery_level') }}"
+
+    kitchen_motion_sensor_battery_level:
+      friendly_name: "Датчик движения на кухне"
+      device_class: battery
+      value_template: "{{ state_attr('binary_sensor.kitchen_motion_sensor', 'battery_level') }}"
 
     loft_smoke_sensor_battery_level:
       friendly_name: "Датчик дыма на чердаке"
