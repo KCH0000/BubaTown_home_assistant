@@ -2,61 +2,64 @@ binary_sensor.hall_motion_sensor:
   friendly_name: "Датчик движения в холле"
   hidden: false
   homebridge_hidden: false
-  entity_picture:
   device_class: motion
 
 binary_sensor.summer_kitchen_motion_sensor:
   friendly_name: "Датчик движения летняя кухня"
   hidden: false
   homebridge_hidden: false
-  entity_picture:
   device_class: motion
 
 binary_sensor.porch_motion_sensor:
   friendly_name: "Датчик движения на веранде"
   hidden: false
   homebridge_hidden: false
-  entity_picture:
   device_class: motion
 
 binary_sensor.loft_motion_sensor:
   friendly_name: "Датчик движения на чердаке"
   hidden: false
   homebridge_hidden: false
-  entity_picture:
+  device_class: motion
+
+binary_sensor.kitchen_motion_sensor:
+  friendly_name: "Датчик движения на кухне"
+  hidden: false
+  homebridge_hidden: false
+  device_class: motion
+
+binary_sensor.garage_motion_sensor:
+  friendly_name: "Датчик движения в гараже"
+  hidden: false
+  homebridge_hidden: false
   device_class: motion
 
 binary_sensor.loft_smoke_sensor:
   friendly_name: "Датчик дыма на чердаке"
   hidden: false
   homebridge_hidden: false
-  entity_picture:
   device_class: smoke
 
 binary_sensor.hall_smoke_sensor:
   friendly_name: "Датчик дыма в Холле"
   hidden: false
   homebridge_hidden: false
-  entity_picture:
   device_class: smoke
 
 binary_sensor.kitchen_smoke_sensor:
   friendly_name: "Датчик дыма на кухне"
   hidden: false
   homebridge_hidden: false
-  entity_picture:
   device_class: smoke
 
 binary_sensor.garage_smoke_sensor:
   friendly_name: "Датчик дыма в гараже"
   hidden: false
   homebridge_hidden: false
-  entity_picture:
   device_class: smoke
 
 binary_sensor.kitchen_flood_sensor:
   friendly_name: "Датчик протечки на кухне"
   hidden: false
   homebridge_hidden: false
-  entity_picture:
   device_class: moisture
