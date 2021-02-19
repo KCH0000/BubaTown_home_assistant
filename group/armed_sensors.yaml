@@ -4,6 +4,9 @@ motion_sensors:
     - switch.summer_kitchen_motion_sensor
     - switch.porch_motion_sensor
     - switch.hall_motion_sensor
+    - switch.loft_motion_sensor
+    - switch.garage_motion_sensor
+    - switch.kitchen_motion_sensor
 
 smoke_sensors:
   name: 'Датчики дыма'
