@@ -6,6 +6,9 @@
         - binary_sensor.hall_motion_sensor
         - binary_sensor.summer_kitchen_motion_sensor
         - binary_sensor.porch_motion_sensor
+        - binary_sensor.garage_motion_sensor
+        - binary_sensor.kitchen_motion_sensor
+        - binary_sensor.loft_motion_sensor
       to: 'on'
   action:
     - condition: template

@@ -11,6 +11,8 @@
       - sensor.kitchen_smoke_sensor_battery_level
       - sensor.garage_smoke_sensor_battery_level
       - sensor.kitchen_flood_sensor_battery_level
+      - sensor.garage_motion_sensor_battery_level
+      - sensor.kitchen_motion_sensor_battery_level
     below: 10
   action:
     - service: notify.telegram
