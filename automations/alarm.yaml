@@ -1,3 +1,18 @@
+- alias: Alarm auto off
+  trigger: 
+  - platform: state
+    entity_id: person.buba
+    from: 'not_home'
+    to: 'home'
+  action:
+  - service: homeassistant.turn_off
+    entity_id: group.motion_sensors
+  - service: notify.telegram
+    data_template:
+        message: >
+          Добро пожаловать, сигнализация отключена. 
+          Температура в доме {{ states('sensor.kitchen_motion_temperature') }}
+
 - id: alarm_motion
   alias: 'Alarm then sensor armed'
   trigger:
