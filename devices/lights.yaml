@@ -1,56 +1,56 @@
-- platform: template
-  lights:
-    balcony_light:
-      friendly_name: 'Свет на балконе'
-      value_template: >-
-        {% if is_state('switch.balcony_light', 'on') %}
-          on
-        {% else %}
-          off
-        {% endif %}
-      turn_on:
-        service: switch.turn_on
-        data:
-          entity_id: switch.balcony_light
-      turn_off:
-        service: switch.turn_off
-        data:
-          entity_id: switch.balcony_light
+- platform: switch
+  name: hall_light_main
+  entity_id: switch.hall_light_main
 
-- platform: template
-  lights:
-    summer_terrace_light:
-      friendly_name: 'Свет на террасе'
-      value_template: >-
-        {% if is_state('switch.summer_terrace_light', 'on') %}
-          on
-        {% else %}
-          off
-        {% endif %}
-      turn_on:
-        service: switch.turn_on
-        data:
-          entity_id: switch.summer_terrace_light
-      turn_off:
-        service: switch.turn_off
-        data:
-          entity_id: switch.summer_terrace_light
+- platform: switch
+  name: hall_light_sub
+  entity_id: switch.hall_light_sub
 
-- platform: template
-  lights:
-    yard_light_at_balcony:
-      friendly_name: 'Свет во дворе'
-      value_template: >-
-        {% if is_state('switch.yard_light_at_balcony', 'on') %}
-          on
-        {% else %}
-          off
-        {% endif %}
-      turn_on:
-        service: switch.turn_on
-        data:
-          entity_id: switch.yard_light_at_balcony
-      turn_off:
-        service: switch.turn_off
-        data:
-          entity_id: switch.yard_light_at_balcony
+- platform: switch
+  name: yard_light_at_balcony
+  entity_id: switch.yard_light_at_balcony
+
+- platform: switch
+  name: summer_terrace_light
+  entity_id: switch.summer_terrace_light
+
+- platform: switch
+  name: porch_light_main
+  entity_id: switch.porch_light_main
+
+- platform: switch
+  name: porch_light_sub
+  entity_id: switch.porch_light_sub
+
+- platform: switch
+  name: balcony_light
+  entity_id: switch.balcony_light
+
+- platform: switch
+  name: kitchen_light_main
+  entity_id: switch.kitchen_light_main
+
+- platform: switch
+  name: kitchen_light_sub
+  entity_id: switch.kitchen_light_sub
+
+- platform: switch
+  name: loft_light_main
+  entity_id: switch.loft_light_main
+
+- platform: switch
+  name: loft_light_sub
+  entity_id: switch.loft_light_sub
+
+- platform: switch
+  name: garage_light
+  entity_id: switch.garage_light
+
+- platform: switch
+  name: kitchen_coridor_light
+  entity_id: switch.kitchen_coridor_light
+
+- platform: switch
+  name: torsher
+  entity_id: switch.torsher
+  
