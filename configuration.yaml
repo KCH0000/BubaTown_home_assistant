@@ -50,6 +50,7 @@ scene: !include_dir_merge_list scenes/
 config:
 recorder:
   db_url: !secret db_url
+  db_retry_wait: 30
   purge_keep_days: 30
 
 #############################################
@@ -80,3 +81,7 @@ notify:
 #transmission:
 #  host: !secret transmission_host
 
+rest_command:
+  restart_water_supply:
+    url: !secret webhook_restart_water_filters_buba
+    method: POST
